@@ -1,0 +1,35 @@
+<p>
+  service works!
+</p>
+
+
+<table class="table" *ngFor="let items of details">
+<thead>
+
+<th>No</th>
+<th>
+Service name
+</th>
+<th>Discription</th>
+<th>Action</th>
+</thead>
+<tbody>
+<tr>
+  <td>{{items.id}}</td>
+
+<td>
+    {{items.service}}
+
+</td>
+<td>
+    {{items.discription}}
+</td>
+<td>
+  <button class="btn btn-primary" (click)="chiledone(items)">view</button>
+</td>
+</tr>
+
+</tbody>
+
+
+</table>
